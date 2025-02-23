@@ -16,8 +16,8 @@ class Rectangulo(color: String, val base: Double, val altura: Double) : Figura(c
 
 class Triangulo(color: String, val lado1: Double, val lado2: Double, val lado3: Double) : Figura(color) {
     override fun area(): Double {
-        val s = (lado1 + lado2 + lado3) / 2  // Semiperímetro
-        return Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3))  // Fórmula de Herón
+        val s = (lado1 + lado2 + lado3) / 2
+        return Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3))
     }
     override fun perimetro(): Double = lado1 + lado2 + lado3
 }
